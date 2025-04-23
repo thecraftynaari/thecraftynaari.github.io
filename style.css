@@ -394,6 +394,60 @@ ul {
     flex-grow: 1; /* Makes description take up space */
 }
 
+/* Product Slideshows */
+.slideshow-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.mySlides {
+    display: none;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 4px;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
+.slideshow-prev,
+.slideshow-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.slideshow-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.slideshow-prev:hover,
+.slideshow-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Remove height constraint from product card */
+.product-card img {
+    height: auto; /* Remove fixed height */
+}
 /* --- Exhibitions Section --- */
 .upcoming-events, .past-events {
     margin-bottom: 40px;
@@ -574,6 +628,8 @@ footer.site-footer {
         flex-direction: row; /* Side-by-side */
         align-items: flex-start;
         text-align: left;
+        padding-left: 1vh; /* Adjust value as needed */
+        padding-right: 1vh; /* Adjust value as needed */
     }
      .about-image {
         flex-basis: 40%; /* Adjust image width */
@@ -583,6 +639,7 @@ footer.site-footer {
         flex-basis: 55%;
         text-align: center; /* Center text */
     }
+    
     
 
     .contact-details-grid {
@@ -669,5 +726,18 @@ footer.site-footer {
 
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjust min size for smaller screens */
+    }
+    .about-content {
+        padding-left: 2vh; /* Adjust value as needed */
+        padding-right: 2vh; /* Adjust value as needed */
+    }
+     .about-text {
+        text-align: center; /* Center text */
+        padding-left: 2vh; /* Adjust value as needed */
+        padding-right: 2vh; /* Adjust value as needed */
+    }
+    /* Remove height constraint from product card */
+    .slideshow-container img {
+        height: auto; /* Remove fixed height */
     }
 }
