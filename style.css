@@ -11,7 +11,7 @@
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Lato', sans-serif;
 
-    --container-width: 1140px;
+    --container-width: 100vw;
     --section-padding: 60px 0;
 }
 
