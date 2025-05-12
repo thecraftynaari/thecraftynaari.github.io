@@ -155,7 +155,7 @@ ul {
     align-items: center;
 }
 .logo-img {
-    max-width: 120px; /* Adjust logo size */
+    max-width: 10vh;
     margin-right: auto;
 }
 /* .logo {
